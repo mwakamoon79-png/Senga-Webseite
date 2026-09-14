@@ -1,0 +1,29 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Bereits vorhandene Dateien und Ordner (z. B. /assets/...) unverändert ausliefern
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Aufrufe mit .html-Endung dauerhaft auf die Adresse ohne Endung umleiten
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Intern auf die passende .html-Datei umschreiben, wenn sie existiert
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Startseite ausdrücklich intern auflösen
+RewriteRule ^$ index.html [L]
+
+# Eigene Fehlerseite für nicht gefundene Adressen
+ErrorDocument 404 /404.html
+
+# Sicherheits-Standardeinstellungen
+Options -Indexes
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

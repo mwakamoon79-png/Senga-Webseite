@@ -1,0 +1,21 @@
+Bild-Prompts für Senga Webdesign
+================================
+
+Diese Texte kannst du in einen KI-Bildgenerator (z. B. ChatGPT/DALL-E, Midjourney) kopieren.
+Speichere die fertigen Bilder und zieh sie einfach hier in den Chat, dann baue ich sie ein.
+
+1) Startseite, Kopfbereich (rechtes Bild neben der Überschrift)
+----------------------------------------------------------------
+Warm, editorial photo of a modern laptop screen displaying a clean, minimal website
+mockup, placed on a wooden desk with a coffee cup and a small plant nearby, soft
+natural window light from the side, warm neutral color palette with dark charcoal
+and muted warm gold accents, shallow depth of field, calm and uncluttered styling,
+no visible logos or readable text on the screen, photographic, aspect ratio 4:3.
+
+2) Über mich (Portrait, wird auch klein auf der Startseite verwendet)
+----------------------------------------------------------------------
+Natural, warm portrait photo of a friendly freelance web designer sitting at a desk,
+softly smiling, candid and approachable body language, warm neutral clothing, softly
+blurred home-office background in cream and dark charcoal tones with a small warm
+gold accent detail visible, natural daylight, documentary photography style, no
+visible text, logos or screens, aspect ratio 4:5.
